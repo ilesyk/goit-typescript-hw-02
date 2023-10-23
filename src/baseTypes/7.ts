@@ -12,12 +12,12 @@ enum Day {
   Sunday = "Sunday",
 }
 
-function isWeekend(dayOfWeek: Day) {
+function isWeekend(dayOfWeek: Day):boolean {
   if (dayOfWeek === Day.Saturday || dayOfWeek === Day.Sunday)
   {
-    return console.log(true);
+    return true;
   }
-  return console.log(false)
+  return false;
 }
 
 isWeekend(Day.Monday);
